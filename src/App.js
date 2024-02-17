@@ -1,4 +1,5 @@
 import './App.css';
+import TaskRowItem from './components/TaskRowItem';
 
 function App() {
   return (
@@ -17,11 +18,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope='row'>1</th>
-                <td>Feed dog</td>
-                <td>Eric</td>
-              </tr>
+              <TaskRowItem />
               <tr>
                 <th scope='row'>2</th>
                 <td>Get haircut</td>

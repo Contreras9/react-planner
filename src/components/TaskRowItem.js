@@ -1,9 +1,14 @@
 function TaskRowItem() {
+
+    const rowNum = 1
+    const rowDescription = "Feed dog"
+    const rowAssigned = "Eric"
+
     return (
     <tr>
-        <th scope='row'>1</th>
-        <td>Feed dog</td>
-        <td>Eric</td>
+        <th scope='row'>{rowNum}</th>
+        <td>{rowDescription}</td>
+        <td>{rowAssigned}</td>
     </tr>
     )
 }
