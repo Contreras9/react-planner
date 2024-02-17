@@ -6,7 +6,8 @@ function App() {
   const tasks = [
     {rowNum: 1, rowDescription: "Feed puppy", rowAssigned: "User One"},
     {rowNum: 2, rowDescription: "Water plants", rowAssigned: "User Two"},
-    {rowNum: 3, rowDescription: "Make dinner", rowAssigned: "User One"}
+    {rowNum: 3, rowDescription: "Make dinner", rowAssigned: "User One"},
+    {rowNum: 4, rowDescription: "Charge phone battery", rowAssigned: "User One"}
   ]
 
   return (

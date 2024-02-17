@@ -12,9 +12,13 @@ function TaskTable(props) {
           </tr>
         </thead>
         <tbody>
-          <TaskRowItem rowNum={props.tasks[0].rowNum} rowDescription={props.tasks[0].rowDescription} rowAssigned={props.tasks[0].rowAssigned} />
-          <TaskRowItem rowNum={props.tasks[1].rowNum} rowDescription={props.tasks[1].rowDescription} rowAssigned={props.tasks[1].rowAssigned} />
-          <TaskRowItem rowNum={props.tasks[2].rowNum} rowDescription={props.tasks[2].rowDescription} rowAssigned={props.tasks[2].rowAssigned} />
+            {props.tasks.map(task => (
+                <TaskRowItem
+                rowNum={task.rowNum}
+                rowDescription={task.rowDescription}
+                rowAssigned={task.rowAssigned}
+                />
+            ))}
         </tbody>
       </table>
     )
