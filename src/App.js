@@ -10,6 +10,14 @@ function App() {
     {rowNum: 4, rowDescription: "Charge phone battery", rowAssigned: "User One"}
   ]
 
+  const addTask = () => {
+    if (tasks.length > 0) {
+      const newTask = {rowNum: tasks.length + 1, rowDescription: "New Task", rowAssigned: "User Three"}
+      tasks.push(newTask)
+      console.log(tasks)
+    }
+  }
+
   return (
     <div className='mt-5 container'>
       <div className='card'>
@@ -18,6 +26,9 @@ function App() {
         </div>
         <div className='card-body'>
           <TaskTable tasks={tasks} />
+          <button className='btn btn-primary' onClick={addTask}>
+            Add new task
+          </button>
         </div>
       </div>
     </div>
